@@ -1,4 +1,6 @@
-
+body {
+    background-color: #518CCA;
+}
 
 .button {
     aspect-ratio: auto;
@@ -10,6 +12,16 @@
     position: relative;
 }
 
+.w-button {
+    padding-top: 9px;
+    padding-left: 15px;
+    padding-bottom: 9px;
+    padding-right: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
 .navBar {
     background-color: #e23636;
     border-radius: 0;
@@ -17,7 +29,10 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    position: relative;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
 }
 
 .button-2{
@@ -47,3 +62,10 @@
     display: inline;
 }
 
+.gif {
+    position: absolute;
+    top: 11px;
+    left: 0px;
+    right: 0px;
+    clip-path: inset(65px 0px 65px 0px);
+}
