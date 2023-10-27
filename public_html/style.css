@@ -2,6 +2,10 @@ body {
     background-color: #518CCA;
 }
 
+.main-body {
+    position: relative;
+}
+
 .button {
     aspect-ratio: auto;
     background-color: #504a4a;
