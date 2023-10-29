@@ -2,8 +2,46 @@ body {
     background-color: #518CCA;
 }
 
-.main-body {
+.main-body-left {
     position: relative;
+    align-content: last baseline;
+    margin-right: 140px;/* Same width as the sidebar + left position in px */
+    font-size: 28px;/* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.main-body-right {
+    position: relative;
+    align-content: last baseline;
+    margin-left: 140px;/* Same width as the sidebar + left position in px */
+    font-size: 28px;/* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.sidebar-right {
+    width: 130px;
+        position: fixed;
+        z-index: 1;
+        top: 100px;
+        right: 10px;
+        background: #e23636;
+        overflow-x: hidden;
+        padding: 8px 0;
+}
+
+.sidebar-left {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 10px;
+    background: #e23636;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidebar-img {
+    padding: 6px 8px 6px 16px
 }
 
 .button {
@@ -33,7 +71,7 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 0px;
     right: 0px;
@@ -67,8 +105,9 @@ body {
 }
 
 .gif {
-    position: absolute;
-    top: 11px;
+    position: relative;
+    max-width: 100%;
+    top: 0px;
     left: 0px;
     right: 0px;
     clip-path: inset(65px 0px 65px 0px);
