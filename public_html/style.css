@@ -5,7 +5,7 @@ body {
 .main-body-left {
     position: relative;
     align-content: last baseline;
-    margin-right: 140px;/* Same width as the sidebar + left position in px */
+    margin-right: 140px;/* Same width as the sidebar + right position in px */
     font-size: 28px;/* Increased text to enable scrolling */
     padding: 0px 10px;
 }
@@ -22,7 +22,7 @@ body {
     width: 130px;
         position: fixed;
         z-index: 1;
-        top: 100px;
+        top: 90px;
         right: 10px;
         background: #e23636;
         overflow-x: hidden;
@@ -54,6 +54,14 @@ body {
     margin-bottom: 20px;
     display: block;
     position: relative;
+    margin-right: 33px;
+}
+
+.button-2 {
+    background-color: #504a4a;
+    margin-top: 0;
+    margin-right: 33px;
+    padding-left: 15px;
 }
 
 .w-button {
@@ -96,28 +104,7 @@ body {
     right: 0px;
 }
 
-.button-2{
-    background-color: #504a4a;
-    margin-top: 0;
-    margin-left: 33px;
-    margin-right: 33px;
-    padding-left: 15px;
-}
 
-.button-3 {
-    background-color: #504a4a;
-    margin-left: 33px;
-    margin-right: 33px;
-}
-
-.button-4 {
-    background-color: #504a4a;
-    margin-right: 33px;
-}
-
-.button-5 {
-    background-color: #504a4a;
-}
 
 .image {
     display: inline;
@@ -130,4 +117,43 @@ body {
     left: 0px;
     right: 0px;
     clip-path: inset(65px 0px 65px 0px);
+}
+
+.text-with-image {
+    position: relative;
+    align-content: last baseline;
+    margin-right: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.text-with-image img {
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Create space between the image and text */
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative;
+    align-content: last baseline;
+    margin-right: 140px; /* Same width as the sidebar + right position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Create a stacked column */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the images */
+.column img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add some space between images */
 }
