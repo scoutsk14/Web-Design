@@ -8,6 +8,7 @@ body {
     margin-right: 140px;/* Same width as the sidebar + right position in px */
     font-size: 28px;/* Increased text to enable scrolling */
     padding: 0px 10px;
+    font-family: sans-serif;
 }
 
 .main-body-right {
@@ -16,6 +17,7 @@ body {
     margin-left: 150px;/* Same width as the sidebar + left position in px */
     font-size: 28px;/* Increased text to enable scrolling */
     padding: 0px 10px;
+    font-family: sans-serif;
 }
 
 .sidebar-right {
@@ -164,4 +166,31 @@ body {
     max-width: 100%; /* Ensure images don't exceed their container */
     height: auto; /* Maintain aspect ratio */
     margin: 10px; /* Add some space between images */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.card {
+    flex: 0 0 200px;
+    margin: 10px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card .text {
+    padding: 0 20px 20px;
+}
+
+.card .text>button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
 }
